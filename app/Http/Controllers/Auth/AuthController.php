@@ -20,6 +20,7 @@ class AuthController extends Controller
     public function signIn (Request $request) {
         
         $user = $request->email;
+        
 
         return back()->withErrors(['asda' => $user ]);
     }
